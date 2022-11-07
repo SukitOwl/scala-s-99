@@ -11,7 +11,7 @@ assert(2 == f(input))
 
 
 println("\n----- Stat for get list[n-1] from List -----\n")
-printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(ms)", "Apply(ms)", "winner", "faster (times)")
+printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(us)", "Apply(us)", "winner", "faster (times)")
 for (size <- List(100, 10000, 1000000, 10000000, 100000000)) {
     val expected = size - 1
 
@@ -34,7 +34,7 @@ for (size <- List(100, 10000, 1000000, 10000000, 100000000)) {
 
 
 println("\n----- Stat for get list[n/2] from List -----\n")
-printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(ms)", "Apply(ms)", "winner", "faster (times)")
+printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(us)", "Apply(us)", "winner", "faster (times)")
 for (size <- List(100, 10000, 1000000, 10000000, 100000000)) {
     val expected = size/2 + 1
 
@@ -57,7 +57,7 @@ for (size <- List(100, 10000, 1000000, 10000000, 100000000)) {
 
 
 println("\n----- Stat for get list[n-1] from Array -----\n")
-printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(ms)", "Apply(ms)", "winner", "faster (times)")
+printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(us)", "Apply(us)", "winner", "faster (times)")
 for (size <- Array(100, 10000, 1000000, 10000000, 100000000)) {
     val expected = size - 1
 
@@ -80,7 +80,7 @@ for (size <- Array(100, 10000, 1000000, 10000000, 100000000)) {
 
 
 println("\n----- Stat for get list[n/2] from list -----\n")
-printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(ms)", "Apply(ms)", "winner", "faster (times)")
+printf("%-15s|%-15s|%-15s|%-15s|%-15s\n", "Size", "TakeRight(us)", "Apply(us)", "winner", "faster (times)")
 for (size <- Array(100, 10000, 1000000, 10000000, 100000000)) {
     val expected = size/2 + 1
 
